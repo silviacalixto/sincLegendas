@@ -4,16 +4,16 @@ const fileutils = require('../fileutils');
 jest.mock('fs');
 
 describe('fileutils', () => {
-    describe('parsearLegenda', () => {
-        it('Leitura do arquivo', () => {
+    describe('lerLegenda', () => {
+        it('faz a leitura do arquivo', () => {
             fs.readFileSync.mockReturnValueOnce('teste');
-            const resultado = fileutils.parsearLegenda('legenda');
+            const resultado = fileutils.lerLegenda('legenda');
             expect(resultado).toEqual(['teste']);
         })
     })
     describe('salvarNovaLegenda', () => {
-        it('Salvamento da nova legenda', () => {
-            fileutils.salvarNovaLegenda('conteudo','legendanova1');
+        it('salva a nova legenda em novo arquivo', () => {
+            fileutils.salvarNovaLegenda('legendanova1','conteudo');
             expect(fs.writeFileSync).toHaveBeenCalledWith('./legendas/legendanova1.str','conteudo');
         })
     })

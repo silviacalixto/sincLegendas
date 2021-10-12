@@ -5,7 +5,6 @@ function formatarLegenda(legendasModificadas) {
         novaLegenda = novaLegenda + legendasModificadas[i] + '\n';
     }
     return novaLegenda;
-    //salvarNovaLegenda(novaLegenda); Chamar salvarNovaLegenda no executar e passar parâmetro
 }
 
 module.exports = formatarLegenda
