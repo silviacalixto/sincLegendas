@@ -4,15 +4,15 @@ Projeto que faz a leitura de arquivos de legendas localizados na pasta "legenda"
 
 ### Setup
 
-Rodar no diretório do projeto: npm install
+Rodar no diretório do projeto: `npm install`
 Obs.: deve-se adicionar os arquivos de legenda na pasta "legenda" para que o programa funcione.
 
 ### Para rodar o projeto
 
-Utilizar na linha de comando (incluindo os parâmetros): node index.js nomeArquivo tempo nomeArquivoNovo
-Ex.: node index.js legenda1 5 legenda1nova
+Utilizar na linha de comando (incluindo os parâmetros): `node index.js <nomeArquivo> <tempo> <nomeArquivoNovo>`
+Ex.: `node index.js legenda1 5 legenda1nova`
 
-Para realização dos testes, aplicar no diretório do projeto: npm test
+Para realização dos testes, aplicar no diretório do projeto: `npm test`
 
 
 
